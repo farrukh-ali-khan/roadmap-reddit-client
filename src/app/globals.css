@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-bg text-gray-100 font-sans;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .card {
+    @apply bg-card-dark rounded-xl border border-gray-800 shadow-xl;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent-blue to-accent-purple text-white px-4 py-2 rounded-lg font-medium transition-all 
+           hover:opacity-90 active:scale-[0.98] shadow-md;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
