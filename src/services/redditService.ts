@@ -1,35 +1,3 @@
-// import axios from "axios";
-// import { RedditPost, Subreddit } from "@/types/reddit";
-
-// export const fetchSubredditPosts = async (
-//   subreddit: string
-// ): Promise<RedditPost[]> => {
-//   try {
-//     const response = await axios.get(
-//       `https://www.reddit.com/r/${subreddit}.json?limit=10`,
-//       {
-//         // Remove cache control headers as they cause issues in browser
-//       }
-//     );
-
-//     return response.data.data.children.map((child: any) => ({
-//       id: child.data.id,
-//       title: child.data.title,
-//       author: child.data.author,
-//       score: child.data.score,
-//       url: child.data.url,
-//       permalink: `https://reddit.com${child.data.permalink}`,
-//       num_comments: child.data.num_comments,
-//       created_utc: child.data.created_utc,
-//       thumbnail: child.data.thumbnail?.startsWith("http")
-//         ? child.data.thumbnail
-//         : null,
-//     }));
-//   } catch (error) {
-//     throw new Error(`Failed to fetch posts from r/${subreddit}`);
-//   }
-// };
-
 import axios from "axios";
 import { RedditPost, Subreddit } from "@/types/reddit";
 
