@@ -132,8 +132,6 @@ This project is licensed under the **ISC License**.
 
 This project was created as part of the Reddit Client Project on roadmap.sh.
 
-```
-
 ### Key Changes:
 
 - **Structure**: Organized the sections into logical, easy-to-read segments (e.g., Features, Live Demo, Installation, Usage).
@@ -142,4 +140,3 @@ This project was created as part of the Reddit Client Project on roadmap.sh.
 - **Clarity**: Simplified the installation and usage instructions.
 
 Now your README looks more polished and easy for contributors and users to understand! Let me know if you'd like to add more info or modify anything.
-```
